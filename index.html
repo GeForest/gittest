@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="block__notes">
+        <div class="notes__header">
+            <div class="notes__btn" data-modal-open="modal-1"></div>
+            <div class="notes__title">Добавьте новую заметку!</div>
+        </div>
+        <div class="notes__body">
+            <!-- <div class="notes__content">
+                <h1>Books</h1>
+                <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quas blanditiis vitae, iure esse commodi dignissimos sunt possimus, labore nisi sit dolorem aperiam rerum, aliquam officiis. Labore, aliquam? Error, minima.</span>
+            </div> -->
+        </div>
+    </div>
+    <div class="notes__modal" data-modal="modal-1">
+        <div class="modal__body">
+            <div class="modal__btn">&times</div>
+            <!-- <div type="text" class="modal__title"></div>
+            <div class="modal__text"></div> -->
+            <div class="modal__form">
+                <input class="modal__title input" type="text" maxlength="30" placeholder="Название заметки">
+                <textarea class="modal__text input" type="text" placeholder="Текст заметки" 
+                maxlength="300" name="" id="" cols="30" rows="10"></textarea>
+                <div class="modal__add-notes"><span>Добавить заметку!</span></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
