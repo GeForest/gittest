@@ -2,13 +2,7 @@ const openModals = document.querySelectorAll('.notes__btn')
 const modals = document.querySelectorAll(".notes__modal")
 const btnAddNotes = document.querySelector('.modal__add-notes')
 const btnRemoveNotes = document.getElementById('notes')
-// const btnRemoveNotess = document.querySelector('.remove__notess')
 
-// let inputTitle = document.querySelector('modal__title').value
-
-
-// let bodyNotes = newDiv = null;
-// arrNotes = []
 btnAddNotes.addEventListener('click', () =>{
     let bodyNotes = document.querySelector('.notes__body')
     let newDiv = document.createElement("div");
@@ -37,60 +31,7 @@ btnAddNotes.addEventListener('click', () =>{
     // Вставляем в newDiv
     newDiv.append(conteiner);
     bodyNotes.insertAdjacentElement('beforeend', newDiv);
-    //closeModal()
 })
-// btnAddNotes.addEventListener('click', () =>{
-//     let bodyNotes = document.querySelector('.notes__body')
-//     let newDiv = document.createElement("div");
-//     let inputTitle = document.querySelector('.modal__title').value
-//     let inputText = document.querySelector('.modal__text').value
-//     newDiv.innerHTML = `
-//     <div class="notes__content data-notes="remove1"">
-//         <div data-notes-remove="remove1" id="notes" class="remove__notes">&times</div>
-//         <h1>${inputTitle}</h1>
-//         <span>${inputText}</span>
-//     </div>`;
-//     bodyNotes.insertAdjacentElement('beforeend', newDiv);
-//     closeModal()
-//     console.log(newDiv)
-//     document.addEventListener("DOMContentLoaded", newDiv);
-//     // window.addEventListener("DOMContentLoaded", (event) => {
-//     //     const el = document.getElementById('notes');
-//     //     if (el) {
-//     //       el.addEventListener('click', removeBlock, false);
-//     //     }
-//     // });
-//     // // document.querySelector('.notes__title').innerHTML = inputTitle
-// })
-// btnRemoveNotes.forEach((btnRemove) => {
-//     console.log('???')
-// });
-// if (btnRemoveNotes) {
-//     // Not called
-//     btnRemoveNotes.addEventListener('click', () => {
-//         console.log('???')
-//     });
-//   }
-// function removeBlock() {
-//     // document.getElementsByClassName("notes__content").remove();
-//     console.log('???')
-// }
-// window.addEventListener("DOMContentLoaded", (e) => {
-//         if(e.target === btnRemoveNotes) {
-//             console.log('Good')
-//         }
-//     });
-// function removeBlock() {
-//     // document.getElementsByClassName("notes__content").remove();
-//     console.log('???')
-// }
-// document.querySelector("remove__notes").onclick = function() {
-//     document.getElementById("notes__content").remove();
-// }
-// btnRemoveNotes.addEventListener('click', (e) => {
-//     let removeBlock = e.target.querySelector('notes__content')
-//     removeBlock.remove()
-// })
 
 function openModal (e) {
     e.classList.toggle("active")
